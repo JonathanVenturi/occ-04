@@ -60,53 +60,6 @@ body {
   margin: 0 auto;
 }
 
-header.topnav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-header.topnav .header-logo {
-  height: 50px;
-  float: left;
-}
-header.topnav .navbar {
-  display: flex;
-  gap: 10px;
-}
-header.topnav .navbar a {
-  height: 50px;
-  display: block;
-  color: #000000;
-  font-size: 1.125rem;
-  padding: 12px;
-}
-header.topnav .navbar a:hover {
-  background-color: #ff0000;
-  color: #ffffff;
-  border-radius: 15px;
-}
-header.topnav .navbar a.active {
-  background-color: #ff0000;
-  color: #ffffff;
-  border-radius: 15px;
-}
-@media (max-width: 1023px) {
-  header.topnav .navbar {
-    display: none;
-  }
-}
-header.topnav .navbar-toggle {
-  width: 50px;
-  text-align: center;
-  vertical-align: middle;
-  display: none;
-}
-@media (max-width: 1023px) {
-  header.topnav .navbar-toggle {
-    display: block;
-  }
-}
-
 main {
   padding: 20px;
   font-size: 130%;
@@ -343,6 +296,68 @@ footer .copyrights {
   footer .copyrights {
     text-align: center;
   }
+}
+
+header.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+header.topnav .header-logo {
+  height: 50px;
+}
+@media (max-width: 480px) {
+  header.topnav .header-logo {
+    height: 20px;
+  }
+}
+header.topnav .navbar {
+  display: flex;
+  gap: 10px;
+}
+header.topnav .navbar a {
+  height: 50px;
+  display: block;
+  color: #000000;
+  font-size: 1.125rem;
+  padding: 12px;
+}
+header.topnav .navbar a:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 15px;
+}
+header.topnav .navbar a.active {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 15px;
+}
+@media (max-width: 1023px) {
+  header.topnav .navbar {
+    display: none;
+  }
+}
+header.topnav .navbar-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fe142f;
+  width: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  header.topnav .navbar-toggle {
+    display: flex;
+  }
+}
+header.topnav .navbar.responsive {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-section {

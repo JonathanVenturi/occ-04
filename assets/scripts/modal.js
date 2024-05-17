@@ -1,14 +1,3 @@
-// Code for responsive navbar display
-
-function editNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
 // DOM Elements
 const modalbg = document.querySelector(".modal-background");
 const reservationModal = document.getElementById('reservation-modal');

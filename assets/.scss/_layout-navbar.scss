@@ -1,0 +1,68 @@
+// Page header with logo and navigation bar
+
+header.topnav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    .header-logo {
+        height: 50px;
+        @media(max-width: 480px) {
+            height: 20px;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        gap: 10px;
+
+        a {
+            height: 50px;
+            display: block;
+            color: #000000;
+            font-size: 1.125rem;
+            padding: 12px;
+        }
+
+        a:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+            border-radius: 15px;
+        }
+
+        a.active {
+            background-color: #ff0000;
+            color: #ffffff;
+            border-radius: 15px;
+        }
+
+        @media(max-width: 1023px) {
+            display: none;
+        }
+
+    }
+
+    .navbar-toggle {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fe142f;
+        width: 50px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width: 1023px) {
+            display: flex;
+        }
+    }
+
+    .navbar.responsive {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
