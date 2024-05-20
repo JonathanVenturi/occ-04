@@ -1,0 +1,16 @@
+// FOOTER SECTION
+
+footer {
+
+    padding: 20px;
+
+    .copyrights {
+        color: #fe142f;
+        font-size: 1rem;
+        font-weight: bolder;
+
+        @media(max-width: 768px) {
+            text-align: center;
+        }
+    }
+}

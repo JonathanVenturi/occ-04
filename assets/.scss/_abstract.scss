@@ -1,7 +1,4 @@
-// ROOT
+// RESPONSIVE BREAKPOINTS
 
-:root {
-    --font-default: "DM Sans", Arial, Helvetica, sans-serif;
-    --font-slab: var(--font-default);
-    --modal-duration: 0.8s;
-  }
+$navbarBreakpoint: 1023px;
+$heroBreakpoint: 1023px;

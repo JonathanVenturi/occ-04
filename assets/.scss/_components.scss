@@ -1,16 +1,47 @@
 
 .button {
-    font-size: 145%;
     background: #fe142f;
-    display: flex;
-    margin: auto;
-    padding: 2em;
+    display: block;
+    margin: 0 auto;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 12px 82px;
     color: #fff;
-    padding: 0.75rem 2.5rem;
-    border-radius: 1rem;
     cursor: pointer;
+    border: 0;
 }
 
 .button:hover {
     background: #3876ac;
+}
+
+// CLOSE BUTTON
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 33px;
+    width: 3px;
+    background-color: #fff;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
 }
